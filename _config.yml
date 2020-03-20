@@ -45,10 +45,12 @@ author:
   email:               <mail@domain.tld>
   # Used by `jekyll-seo-tag`:
   # twitter:             <usernamem>
+  social:
+    github:          opqrstu
 
 # Add links to the sidebar.
 menu:
-  - title:             U-boot
+  - title:             U-Boot
     url:               /hydejack/
   - title:             Shell
     url:               /hyde/
