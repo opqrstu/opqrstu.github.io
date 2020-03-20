@@ -303,10 +303,10 @@ plugins:
 
 # Used on index and about sites
  social:
-   name:                <firstname> <lastname>
+   name:                donghyun song
    links:
      - https://twitter.com/<usernamee>
-     - https://github.com/<username>
+     - https://github.com/opqrstu/opqrstu.github.io
 
 
 # Other Plugins
