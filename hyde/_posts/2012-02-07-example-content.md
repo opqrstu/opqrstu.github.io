@@ -4,7 +4,6 @@ title: Example content
 description: >
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 author: author2
-comments: true
 noindex: true
 ---
 
