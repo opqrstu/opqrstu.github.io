@@ -44,13 +44,11 @@ author:
   name:                <firstname> <lastname>
   email:               <mail@domain.tld>
   # Used by `jekyll-seo-tag`:
-  # twitter:             <usernamem>
-  social:
-    github:          opqrstu
+  # twitter:             <username>
 
 # Add links to the sidebar.
 menu:
-  - title:             U-Boot
+  - title:             U-boot
     url:               /hydejack/
   - title:             Shell
     url:               /hyde/
@@ -304,11 +302,11 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
- social:
-   name:                donghyun song
-   links:
-     - https://twitter.com/<usernamee>
-     - https://github.com/opqrstu/opqrstu.github.io
+# social:
+#   name:                <firstname> <lastname>
+#   links:
+#     - https://twitter.com/<usernamee>
+#     - https://github.com/<username>
 
 
 # Other Plugins
