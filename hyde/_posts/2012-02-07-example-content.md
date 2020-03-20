@@ -112,8 +112,6 @@ Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur e
 *[HTML]: HyperText Markup Language
 *[CSS]: Cascading Style Sheets
 *[JS]: JavaScript
-<div id="disqus_thread"></div>
-<script>
 
 {% include disqus.html %}
 
