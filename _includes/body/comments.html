@@ -1,6 +1,6 @@
 {% if page.comments %}
 <aside class="comments related" role="complementary">
-    <h2 class="hr">{{ site.data.strings.comments | default:"CComments" }}</h2>
+  <h2 class="hr">{{ default:"CComments" }}</h2>
   {% include disqus.html %}
 </aside>
 {% endif %}
