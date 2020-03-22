@@ -23,10 +23,8 @@ ggggg
   }
          if (self.name != 'reload') {
          self.name = 'reload';
-           w.DISQUS.reset({ reload: true })
-        
-     }
-     else self.name = '';
-
-  }(window, document);</script>
+         window.location.reload(true);
+         }
+         else self.name = '';
+}(window, document);</script>
 {% endif %}
