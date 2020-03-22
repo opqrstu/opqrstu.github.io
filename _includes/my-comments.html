@@ -21,6 +21,11 @@ wwwwwwwwwwww
       w.loadJSDeferred(d.getElementById("_hrefDisqus").href + '/embed.js');
     }
   }
-window.location.reload(true);
+         if (self.name != 'reload') {
+         self.name = 'reload';
+         window.location.reload(true);
+     }
+     else self.name = '';
+
   }(window, document);</script>
 {% endif %}
