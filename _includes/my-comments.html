@@ -6,7 +6,6 @@ ccccc
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 <script>!function(w, d) {
   if (d.getElementById("disqus_thread")) {
-    DISQUS.reset({ reload: true })
     if (w.DISQUS) {
       w.DISQUS.reset({
         reload: true,
@@ -23,5 +22,6 @@ ccccc
       w.loadJSDeferred(d.getElementById("_hrefDisqus").href + '/embed.js');
     }
   }
-}(window, document);</script>
+DISQUS.reset({ reload: true })
+  }(window, document);</script>
 {% endif %}
