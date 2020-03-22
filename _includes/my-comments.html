@@ -1,4 +1,4 @@
-ddddddddd
+eeeee
 
 {% assign disqus = site.disqus | default:site.disqus_shortname %}
 {% if disqus %}
@@ -22,6 +22,6 @@ ddddddddd
       w.loadJSDeferred(d.getElementById("_hrefDisqus").href + '/embed.js');
     }
   }
-DISQUS.reset({ reload: true })
+window.DISQUS.reset({ reload: true })
   }(window, document);</script>
 {% endif %}
