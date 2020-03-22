@@ -1,4 +1,4 @@
-eeeeeeeeeeee
+fff
 {% assign disqus = site.disqus | default:site.disqus_shortname %}
 {% if disqus %}
 <div id="disqus_thread"></div>
@@ -23,7 +23,8 @@ eeeeeeeeeeee
   }
          if (self.name != 'reload') {
          self.name = 'reload';
-         window.location.reload(true);
+           window.DISQUS.reset({ reload: true })
+        
      }
      else self.name = '';
 
