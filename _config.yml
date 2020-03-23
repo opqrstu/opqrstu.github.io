@@ -48,7 +48,7 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             U-크boot크
+  - title:             U-boot
     url:               /hydejack/
   - title:             Shell
     url:               /hyde/
