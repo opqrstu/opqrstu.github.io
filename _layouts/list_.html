@@ -34,7 +34,7 @@ layout: base
 {% assign list_entry    = date_formats.list_entry    | default:"%d %b" %}
 
 {% for post in posts %}
-  {% assign currentdate = post.categories %}
+  {% assign currentdate = post.categ %}
   {% if currentdate != date %}
     {% unless forloop.first %}</ul>{% endunless %}
     <h2 id="{{ currentdate }}" class="hr">{{ currentdate }}</h2>
