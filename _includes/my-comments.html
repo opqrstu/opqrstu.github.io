@@ -21,8 +21,10 @@
     }
   }
          if (self.name != 'reload') {
+             alert(this.page.url);
          self.name = 'reload';
          window.location.reload(true);
+             alert(this.page.url);
          }
          else self.name = '';
 }(window, document);</script>
