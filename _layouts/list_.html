@@ -48,7 +48,6 @@ layout: base
     <ul class="related-posts">
     {% assign date = currentdate %}
   {% endif %}
-  <h2 id="{{ cate }}" class="hr">{{cate}}</h2>
   {% include components/post-list-item.html post=post format=list_entry %}
   {% if forloop.last %}</ul>{% endif %}
 {% endfor %}
