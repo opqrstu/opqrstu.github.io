@@ -34,11 +34,10 @@ layout: base
 {% assign list_entry    = date_formats.list_entry    | default:"%d %b" %}
 
 {% for post in posts %}
-  {% assign currentdate = post.date | date:list_group_by %}
-  <h3>{{currentdate}} , {{ list_group_by }}, {{ slugify }}</h3>
+  {% assign currentdate = post.categories %}
   {% if currentdate != date %}
     {% unless forloop.first %}</ul>{% endunless %}
-    <h2 id="{{ list_group_by | slugify }}-{{ currentdate | slugify }}" class="hr">{{ currentdate }}</h2>
+    <h2 id="{{ currentdate }}" class="hr">{{ currentdate }}</h2>
     <ul class="related-posts">
     {% assign date = currentdate %}
   {% endif %}
