@@ -35,7 +35,7 @@ layout: base
 
 {% for post in posts %}
   {% assign currentdate = post.date | date:list_group_by %}
-  <h3>{{currentdate}} , {{ list_group_by | slugify }} - {{ currentdate | slugify }}</h3>
+  <h3>{{currentdate}} , {{ list_group_by }}, {{ slugify }}</h3>
   {% if currentdate != date %}
     {% unless forloop.first %}</ul>{% endunless %}
     <h2 id="{{ list_group_by | slugify }}-{{ currentdate | slugify }}" class="hr">{{ currentdate }}</h2>
