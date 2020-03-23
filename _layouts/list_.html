@@ -36,19 +36,35 @@ layout: base
 {% for post in posts %}
   {% assign currentdate = post.date | date:list_group_by %}
   {% assign cate = post.categories %}
-  {% if cate == "blog" %}
+  {% if cate == "yanadublog" %}
+  11111111111
     {% unless forloop.first %}</ul>{% endunless %}
     <h2 id="{{ cate }}" class="hr">blog1</h2>
     <ul class="related-posts">
     {% assign date = currentdate %}
   {% endif %}
   {% if cate == "yanaduchapter1" %}
+  2222222222222
     {% unless forloop.first %}</ul>{% endunless %}
     <h2 id="{{ cate }}" class="hr">chapter1</h2>
     <ul class="related-posts">
     {% assign date = currentdate %}
   {% endif %}
-    <h2 class="hr">{{ cate }}</h2>
+  {% if cate == "chapter1" %}
+  333333333333
+    {% unless forloop.first %}</ul>{% endunless %}
+    <h2 id="{{ cate }}" class="hr">chapter1</h2>
+    <ul class="related-posts">
+    {% assign date = currentdate %}
+  {% endif %}
+  {% if cate == "yanaduchapter1" %}
+  4444444444444
+    {% unless forloop.first %}</ul>{% endunless %}
+    <h2 id="{{ cate }}" class="hr">chapter1</h2>
+    <ul class="related-posts">
+    {% assign date = currentdate %}
+  {% endif %}
+  <h2 id="{{ cate }}" class="hr">{{cate}}</h2>
   {% include components/post-list-item.html post=post format=list_entry %}
   {% if forloop.last %}</ul>{% endif %}
 {% endfor %}
