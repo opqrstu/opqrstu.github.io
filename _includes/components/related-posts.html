@@ -1,14 +1,19 @@
 {% assign post = include.post %}
 
 {% if page.related_posts %}
+1111111
   {% assign related_posts = site.posts | where_exp:"post", "page.related_posts contains post.path" %}
 {% elsif site.hydejack.use_lsi or site.use_lsi %}
+2222222
   {% assign related_posts = site.related_posts %}
 {% elsif post.categories.first %}
+3333333
   {% assign related_posts = site.categories[post.categories.first] | where_exp:"post", "post.url != page.url" %}
 {% elsif post.tags.first %}
+444444
   {% assign related_posts = site.tags[post.tags.first] | where_exp:"post", "post.url != page.url" %}
 {% else %}
+55555555
   {% assign related_posts = site.related_posts %}
 {% endif %}
 
