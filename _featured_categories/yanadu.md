@@ -1,5 +1,5 @@
 ---
-layout: list_
+layout: list_yanadu
 title: yanadu
 slug: yanadu
 menu: true
