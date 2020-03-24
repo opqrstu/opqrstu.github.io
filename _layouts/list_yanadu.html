@@ -35,6 +35,7 @@ layout: base
 
 {% for post in posts %}
   {% assign currentchapter = post.chapter %}
+  {% assign date = post.date | date:list_group_by %}
   {% if currentchapter != chapter %}
     {% unless forloop.first %}</ul>{% endunless %}
     <h2 id="{{ currentchapter }}" class="hr">{{ currentchapter }}</h2>
