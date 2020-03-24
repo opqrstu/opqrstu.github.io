@@ -34,12 +34,12 @@ layout: base
 {% assign list_entry    = date_formats.list_entry    | default:"%d %b" %}
 
 {% for post in posts %}
-  {% assign currentdate = post.categ %}
-  {% if currentdate != date %}
+  {% assign currentchapter = post.chapter %}
+  {% if currentchapter != chapter %}
     {% unless forloop.first %}</ul>{% endunless %}
-    <h2 id="{{ currentdate }}" class="hr">{{ currentdate }}</h2>
+    <h2 id="{{ currentchapter }}" class="hr">{{ currentchapter }}</h2>
     <ul class="related-posts">
-    {% assign date = currentdate %}
+    {% assign chapter = currentchapter %}
   {% endif %}
   {% include components/post-list-item.html post=post format=list_entry %}
   {% if forloop.last %}</ul>{% endif %}
