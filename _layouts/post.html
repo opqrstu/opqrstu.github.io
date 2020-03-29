@@ -28,7 +28,7 @@ layout: base
 {% for addon in addons %}
   {% case addon %}
   {% when 'related' %}
-    {% include components/related-posts.html post=post %}
+    {% include components/related-posts-yanadu.html post=post %}
   {% else %}
   {% endcase %}
 {% endfor %}
