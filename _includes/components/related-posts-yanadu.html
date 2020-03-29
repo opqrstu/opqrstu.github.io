@@ -23,7 +23,7 @@
 
     {% if sameTagCount >= 1 %}
       <li>
-          <a href="{{ site.baseurl }}{{ post.url }}"><span>{{ post.title }}</span></a>
+          <a href="{{ site.baseurl }}{{ post.url }}" class="h4 flip-title"><span>{{ post.title }}</span></a>
           <time class="heading faded fine" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:format }}</time>
       </li>
       {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
