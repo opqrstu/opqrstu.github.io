@@ -19,9 +19,10 @@
     {% endfor %}
 
     {% if sameTagCount >= 1 %}
-      <div>
+      <li>
           <a href="{{ site.baseurl }}{{ post.url }}"><span>{{ post.title }}</span></a>
-      </div>
+          <time class="heading faded fine" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:format }}</time>
+      </li>
       {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
       {% if maxRelatedCounter >= maxRelated %}
         {% break %}
