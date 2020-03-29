@@ -9,6 +9,7 @@
 {% elsif post.categories.first %}
 3333
   {% assign related_posts = site.categories[post.categories.first] | where_exp:"post", "post.url != page.url" %}
+   <h2 class="hr">{{  related_posts }}</h2>
 {% elsif post.tags.first %}
 444444
   {% assign related_posts = site.tags[post.tags.first] | where_exp:"post", "post.url != page.url" %}
