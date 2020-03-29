@@ -8,11 +8,11 @@
     {% assign sameTagCount = 0 %}
     {% assign commonTags = '' %}
 
-    {% for category in post.categories %}
+    {% for chapter in post.chapter %}
       {% if post.url != page.url %}
-        {% if page.categories contains category %}
+        {% if page.chapter contains chapter %}
           {% assign sameTagCount = sameTagCount | plus: 1 %}
-          {% capture tagmarkup %} <span class="label label-default">{{ category }}</span> {% endcapture %}
+          {% capture tagmarkup %} <span class="label label-default">{{ chapter }}</span> {% endcapture %}
           {% assign commonTags = commonTags | append: tagmarkup %}
         {% endif %}
       {% endif %}
@@ -20,7 +20,7 @@
 
     {% if sameTagCount >= 1 %}
       <div>
-      <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ commonTags }}</a></h5>
+      <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
       </div>
       {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
       {% if maxRelatedCounter >= maxRelated %}
