@@ -1,4 +1,4 @@
-<h4>You May Also Enjoy</h4>
+  <h2 class="hr">{{ site.data.strings.related_posts | default:"Related Posts" }}</h2>
 
 {% assign maxRelated = 3 %}
 {% assign maxRelatedCounter = 0 %}
@@ -20,7 +20,7 @@
 
     {% if sameTagCount >= 1 %}
       <div>
-      <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
+          <a href="{{ site.baseurl }}{{ post.url }}"><span>{{ post.title }}</span></a>
       </div>
       {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
       {% if maxRelatedCounter >= maxRelated %}
