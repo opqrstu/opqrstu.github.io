@@ -7,8 +7,8 @@
 2222222
   {% assign related_posts = site.related_posts %}
 {% elsif post.categories.first %}
+3333
   {% assign related_posts = site.categories[post.categories.first] | where_exp:"post", "post.url != page.url" %}
-3 {{related_posts}}
 {% elsif post.tags.first %}
 444444
   {% assign related_posts = site.tags[post.tags.first] | where_exp:"post", "post.url != page.url" %}
