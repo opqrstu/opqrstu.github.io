@@ -54,8 +54,8 @@ menu:
     url:               /hyde/
   - title:             Device driver
     url:               /docs/
-  - title:             About
-    url:               /about/
+  - title:             Stock
+    url:               /stock/
   - title:             yanadu
     url:               /yanadu/
 
