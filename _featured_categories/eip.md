@@ -1,6 +1,6 @@
 ---
 layout: list_eip
-title: eip
+title: 정보처리기사
 slug: eip
 menu: true
 order: 2
